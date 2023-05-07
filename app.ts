@@ -1,9 +1,18 @@
-export {}
-class App{
-    test()
+class Parent{
+    name:string="";
+    setName(name):void
     {
-        console.warn("Test function working")
+        return this.name=name
     }
 }
-let y= new  App()
-y.test();
+
+class Child extends Parent{
+    getName():string
+    {
+        return this.name
+    }
+}
+
+let c1=new Child();
+c1.setName("rony")
+console.log(c1.getName())
