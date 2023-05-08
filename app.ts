@@ -13,6 +13,6 @@ class Child extends Parent{
     }
 }
 
-let c1=new Child();
+let c1=new Child()
 c1.setName("rony")
 console.log(c1.getName())
